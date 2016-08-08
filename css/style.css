@@ -1,0 +1,256 @@
+.menublock {
+  font-family: verdana;
+  font-size: 8pt;
+  background: white;
+  text-align:center;
+  border:1px;
+  color: black; 
+  cursor: pointer;
+  cursor: hand;
+  border-color: black; 
+  border: solid;
+  border-width: 1px;
+  padding-left:8px;
+  padding-right:8px;
+  padding-top:2px;
+  padding-bottom:2px;
+  height:14px;
+  white-space:nowrap;
+}
+A:link {
+  text-decoration: none;
+}
+A:visited {
+  text-decoration: none;
+}
+A:active { 
+  text-decoration: none;  
+}
+A:hover { 
+  text-decoration: none;
+}
+
+.selmenublock { 
+  font-family: verdana;
+  font-size: 8pt;
+  background: #809FFF;
+  text-align:center;
+  border:1px;
+  color: black; 
+  border-color: black; 
+  border: solid;
+  cursor: default;
+  border-width: 1px;
+  padding-left:8px;
+  padding-right:8px;
+  padding-top:2px;
+  padding-bottom:2px;
+  height:14px;
+  white-space:nowrap;
+}
+
+.mainpageblock { 
+  font-family: verdana;
+  font-size: 8pt;
+  padding-left:8px;
+  padding-right:8px;
+  padding-top:8px;
+  padding-bottom:8px;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+  background: white;
+}
+.addressblock { 
+  font-family: verdana;
+  font-size: 8pt;
+  padding-left:8px;
+  padding-right:8px;
+  padding-top:8px;
+  padding-bottom:8px;
+  border: solid;
+  border-width: 1px 1px 0 1px;
+  border-color: black;
+  background: white;
+}
+.adblock { 
+  border: solid;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-color: black;
+  padding-right:8px;
+  padding-top:4px;
+  padding-bottom:4px;
+  background: white;
+}
+.bottomedge { 
+  border: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-color: black;
+  padding-right:8px;
+  background: white;
+  font-size:1pt;
+}
+
+.vspacer { 
+  width:5px;
+}
+
+.titletop { 
+  font-size:1pt;
+  border: solid;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-top-width: 1px;
+  border-bottom-width: 0px;  
+  border-color: black;
+  height: 6px;
+  width: 520px;
+}
+
+.titlemain { 
+  border: solid;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;  
+  border-color: black;
+  vertical-align: top;
+}
+
+.hspacer { 
+  height:5px;
+}
+.smalltxt { 
+  font-family: verdana;
+  font-size: 8pt;
+
+ }
+
+.txt { 
+  font-family: verdana;
+  font-size: 9pt;
+
+ }
+
+.newtxt { 
+  font-family: verdana;
+  font-size: 12pt;
+  color: #FF0000;
+  font-weight:bold;
+  
+ }
+
+.orangetxt { 
+  font-family: verdana;
+  font-size: 8pt;
+  color: #FFB200;
+  font-weight: bold;
+ }
+
+.quotetxt { 
+  font-family: verdana;
+  font-size: 11pt;
+  text-align: center;
+  font-weight: bold;
+ }
+
+
+
+
+.daycell {
+  font-family: verdana;
+  font-size: 7pt;
+  background: skyblue;
+  width: 15px;
+  height: 15px;
+  text-align:center;
+  cursor: default;
+}
+
+.weekendcell {
+  font-family: verdana;
+  font-size: 7pt;
+  background: lightgrey;
+  width: 15px;
+  height: 15px;
+  text-align:center;
+}
+
+.bookedcell {
+  font-family: verdana;
+  font-size: 7pt;
+  background: #FFB200;
+  width: 15px;
+  height: 15px;
+  text-align:center;
+}
+
+.todaycell {
+  font-family: verdana;
+  font-size: 7pt;
+  background: white;
+  width: 15px;
+  height: 15px;
+  text-align:center;
+}
+
+.extradaycell {
+  font-family: verdana;
+  font-size: 7pt;
+  background: darkblue;
+  width: 15px;
+  height: 15px;
+  text-align:center;
+}
+
+.monthcell { 
+  font-family: verdana;
+  font-size: 7pt;
+  background: lightblue;
+  width: 75px;
+  height: 15px;
+  text-align:left;
+}
+
+.yeartext { 
+  font-family: verdana;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+.msgbox { 
+  background: white;
+  font-family: verdana;
+  font-size: 7pt;
+  height: 15px;
+  text-align: right;
+}
+
+th { 
+  font-family: verdana;
+  font-size: 9pt;
+  text-align:left;
+  font-weight: bold;
+}
+
+td { 
+  font-family: verdana;
+  font-size: 9pt;
+  text-align:left;
+  
+}
+
+p.price-table {
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+p.price-table td {
+  padding: 5px 20px 0 5px;
+}
