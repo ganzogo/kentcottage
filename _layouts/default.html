@@ -1,21 +1,41 @@
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Lime Tree Cottage - Home</title>
-<link rel="stylesheet" href="css/style.css">
-<meta name="verify-v1" content="qwvNOoLlT9FjcKTYexleRVcruUsHAKwCZrcEdPbL+tk=">
-</head>
-<body bgcolor="#E6E3CF" style="margin:5px">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lime Tree Cottage - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="verify-v1" content="qwvNOoLlT9FjcKTYexleRVcruUsHAKwCZrcEdPbL+tk=">
+  </head>
+  <body bgcolor="#E6E3CF" style="margin:5px">
 <script language="javascript" type="text/javascript">
           function over_block(block_num,over) {
-          my_block = document.getElementById("menu_"+block_num);
-          if (over==1) {
-          my_block.style.background = "#80C9FF";
-          } else {
-          my_block.style.background = "white";
+            
+            {% if page.title == 'home' %}
+            var current_page_index = '0';
+            {% elsif page.title == 'gallery' %}
+            var current_page_index = '1';
+            {% elsif page.title == 'info' %}
+            var current_page_index = '2';
+            {% elsif page.title == 'details' %}
+            var current_page_index = '3';
+            {% elsif page.title == 'bookings' %}
+            var current_page_index = '4';
+            {% else %}
+            var current_page_index = '5';
+            {% endif %}
+            
+            var my_block = document.getElementById("menu_" + block_num);
+            if (over == 1) {
+              my_block.style.background = "#80C9FF";
+            } else {
+              if (block_num==current_page_index) {
+                my_block.style.background = "#809FFF";
+              } else {
+                my_block.style.background = "white";
+              }
+            }
           }
-          }
-        </script><p align="center"><table width="750" cellspacing="0" cellpadding="0" border="0">
+</script>
+<p align="center"><table width="750" cellspacing="0" cellpadding="0" border="0">
 <tr>
 <td rowspan="3" width="169" height="126"><img src="img/corner_image.gif" width="169" height="126"></td>
 <td class="vspacer" rowspan="3"> </td>
@@ -27,17 +47,17 @@
 </tr>
 <tr><td class="hspacer" colspan="11"></td></tr>
 <tr valign="bottom">
-<td><a href="index"><div id="menu_0" class="selmenublock">Home</div></a></td>
+<td><a href="index"><div id="menu_0" class="{% if page.title == 'home' %}selmenublock{% else %}menublock{% endif %}" onmouseover="over_block('0',1)" onmouseout="over_block('0',0)"">Home</div></a></td>
 <td class="vspacer"> </td>
-<td><a href="gallery"><div id="menu_1" class="menublock" onmouseover="over_block('1',1)" onmouseout="over_block('1',0)">Gallery</div></a></td>
+<td><a href="gallery"><div id="menu_1" class="{% if page.title == 'gallery' %}selmenublock{% else %}menublock{% endif %}" onmouseover="over_block('1',1)" onmouseout="over_block('1',0)">Gallery</div></a></td>
 <td class="vspacer"> </td>
-<td><a href="info"><div id="menu_2" class="menublock" onmouseover="over_block('2',1)" onmouseout="over_block('2',0)">Tourist Info</div></a></td>
+<td><a href="info"><div id="menu_2" class="{% if page.title == 'info' %}selmenublock{% else %}menublock{% endif %}" onmouseover="over_block('2',1)" onmouseout="over_block('2',0)">Tourist Info</div></a></td>
 <td class="vspacer"> </td>
-<td><a href="details"><div id="menu_3" class="menublock" onmouseover="over_block('3',1)" onmouseout="over_block('3',0)">Cottage Details</div></a></td>
+<td><a href="details"><div id="menu_3" class="{% if page.title == 'details' %}selmenublock{% else %}menublock{% endif %}" onmouseover="over_block('3',1)" onmouseout="over_block('3',0)">Cottage Details</div></a></td>
 <td class="vspacer"> </td>
-<td><a href="bookings"><div id="menu_4" class="menublock" onmouseover="over_block('4',1)" onmouseout="over_block('4',0)">Bookings</div></a></td>
+<td><a href="bookings"><div id="menu_4" class="{% if page.title == 'bookings' %}selmenublock{% else %}menublock{% endif %}" onmouseover="over_block('4',1)" onmouseout="over_block('4',0)">Bookings</div></a></td>
 <td class="vspacer"> </td>
-<td><a href="about"><div id="menu_5" class="menublock" onmouseover="over_block('5',1)" onmouseout="over_block('5',0)">About Us</div></a></td>
+<td><a href="about"><div id="menu_5" class="{% if page.title == 'about' %}selmenublock{% else %}menublock{% endif %}" onmouseover="over_block('5',1)" onmouseout="over_block('5',0)">About Us</div></a></td>
 </tr>
 <tr><td class="hspacer" colspan="13"></td></tr>
 <tr><td class="mainpageblock" colspan="13">
